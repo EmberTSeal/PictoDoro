@@ -2,7 +2,41 @@ main{
     gap: 20px;
 }
 
+.card{
+    border-radius: 10px;
+}
+
 .card-images{
     max-height:500px;
     max-width:500px;
+    border-radius: 20px;
+    transition: 30ms ease-in-out;
+}
+
+.card:hover{
+    background-color: rgb(255, 244, 181);
+    translate: 0px -10px;
+}
+
+#continue{
+    border-radius: 50px;
+}
+
+.btn{
+    transition: ease-in-out;
+}
+
+.btn:hover{
+    translate: 0 -2px;
+    box-shadow: 0em 1px 5px 1px #4361ee;
+}
+
+.btn-primary, .btn-primary:active,  .btn-primary:visited{
+    background-color: #f72585 !important;
+    border-color: black !important;
+}
+
+.btn-primary:hover, .btn-primary:focus{
+    border-color: black !important;
+    background-color: #7209b7 !important;
 }
