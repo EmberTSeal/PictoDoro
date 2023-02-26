@@ -1,0 +1,45 @@
+.card:hover {
+    translate: 0px -20px;
+}
+
+.card:hover .card-upper {
+    background-color:skyblue;
+    color: #0F1017;
+    padding-top:0;
+}
+
+.card:hover .card-lower {
+    background-color: skyblue;
+    color: #0F1017;
+}
+
+
+.card:hover a{
+    background-color: #EDE2F4;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 1px 1px 2px 0 rgb(14, 13, 13);   
+}
+
+.card:hover a:hover {
+    color: #EDF2F4;
+    background-color: rgb(27, 25, 23);
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 1px 1px 3px 0.1px rgb(14, 13, 13);
+    font-weight: 800;
+    text-decoration: underline 2px;
+}
+/* 
+.card:hover #most-popular{
+    display: block;
+    z-index: 9;
+    max-width: 12vw;
+    text-align: center;
+    align-self: center;
+    background-color: #29a3f5;
+    color: #EDF2F4;
+    font-weight: 800;
+    font-size: 1.1em;
+    margin-top: -30px;
+    padding: 10px 40px;
+    border-radius: 5px; */
+/* } */
