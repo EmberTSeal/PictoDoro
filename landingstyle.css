@@ -40,3 +40,11 @@ main{
     border-color: black !important;
     background-color: #7209b7 !important;
 }
+
+.dark-card{
+    background-color: #4361ee;
+}
+
+.dark-card:hover{
+    background-color: #7209b7;
+}

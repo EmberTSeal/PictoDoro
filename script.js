@@ -133,6 +133,8 @@ function modeChange() {
         document.getElementById("mode-light").classList.add("d-none")  //sun icon
         document.getElementById("mode-dark").classList.remove("d-none")  //moon icon
         mode = 1;
+        for(let i = 0; i<=2; i++)
+            document.getElementsByClassName("card")[i].classList.remove("dark-card")
     }
     else {
         document.getElementById("body").classList.add("dark")
@@ -140,5 +142,8 @@ function modeChange() {
         document.getElementById("mode-light").classList.remove("d-none")  //sun icon
         document.getElementById("mode-dark").classList.add("d-none")  //moon icon
         mode = 0
+        for(let i = 0; i<=2; i++)
+            document.getElementsByClassName("card")[i].classList.add("dark-card")
+ 
     }
 }
