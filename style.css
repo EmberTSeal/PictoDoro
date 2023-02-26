@@ -30,7 +30,7 @@ body{
     background-color: antiquewhite;
 }
 
-#mode-light, #mode-dark{
+#mode-light, #mode-dark, #home{
     position:absolute;
     align-self:flex-end;
     border-radius: 50px;
@@ -42,15 +42,20 @@ body{
     transition: 30ms ease-in-out;
 }
 
-#mode-light:hover, #mode-dark:hover{
+#home-dark, #home{
+    margin-top: 20vh;
+    align-self: flex-end;
+}
+
+#mode-light:hover, #mode-dark:hover, #home:hover{
     translate: 0px -10px;
 }
 
-#mode-light:hover{
+#mode-light:hover, #home:hover{
     box-shadow: 0px 1px 8px goldenrod;
 }
 
-#mode-dark:hover{
+#mode-dark:hover, #home:hover{
     box-shadow: 0px 1px 8px #3f37c9;
 }
 

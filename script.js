@@ -82,7 +82,7 @@ function endTimer() {
     }
 }
 
-function restartTimer(){
+function restartTimer() {
     if (iteration != 0) {
         hideReward();
         countdownEl.classList.remove("d-none")
@@ -105,7 +105,7 @@ function imageCall() {
     hideAfterDone();
     document.getElementById('story-image').classList.remove("d-none")
     document.getElementById('story').classList.remove("d-none")
-    
+
 }
 
 function hideAfterDone() {
@@ -133,8 +133,10 @@ function modeChange() {
         document.getElementById("mode-light").classList.add("d-none")  //sun icon
         document.getElementById("mode-dark").classList.remove("d-none")  //moon icon
         mode = 1;
-        for(let i = 0; i<=2; i++)
+        for (let i = 0; i <= 2; i++)
             document.getElementsByClassName("card")[i].classList.remove("dark-card")
+        document.getElementById("home").classList.add("d-none")
+        document.getElementById("home-dark").classList.remove("d-none")
     }
     else {
         document.getElementById("body").classList.add("dark")
@@ -142,8 +144,13 @@ function modeChange() {
         document.getElementById("mode-light").classList.remove("d-none")  //sun icon
         document.getElementById("mode-dark").classList.add("d-none")  //moon icon
         mode = 0
-        for(let i = 0; i<=2; i++)
+        for (let i = 0; i <= 2; i++)
             document.getElementsByClassName("card")[i].classList.add("dark-card")
- 
+        document.getElementById("home").classList.remove("d-none")
+        document.getElementById("home-dark").classList.add("d-none")
     }
+}
+
+function home() {
+    window.open("landing.html", "_self")
 }
