@@ -156,5 +156,5 @@ function modeChange() {
 }
 
 function home() {
-    window.open("landing.html", "_self")
+    window.open("index.html", "_self")
 }
