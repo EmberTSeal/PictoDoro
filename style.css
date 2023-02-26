@@ -113,5 +113,7 @@ select{
 #story{
     width: 60vw;
     border-radius: 50px;
-    background-color: rgb(52, 117, 177);
+    background: linear-gradient(to top right, #f09, #3023AE, #0ff)
+
+
 }
