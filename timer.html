@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PictoDoro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js
+"></script>
+    <script src="script.js"></script>
+</head>
+
+<body class="container d-flex flex-column align-items-center justify-content-center dark" id="body">
+    <img src="images/sun_icon.svg" alt="Light Mode" aria-label="Light Mode" id="mode-light" onclick="modeChange()">
+    <img src="images/moon-icon.svg" alt="Dark Mode" aria-label="Dark Mode" id="mode-dark" class="d-none"
+        onclick="modeChange()">
+    <img src="land_img/home.svg" alt="Home Button" aria-label="Home Button" id="home" class="" onclick="home()">
+    <main class="d-flex flex-column align-items-center" id="main">
+        <h1 class="display-6 text-center mb-4">Select a Timer</h1>
+        <select class="form-select-lg text-center ps-2 pe-3 py-2" id="select-menu" aria-label="Timer Selection Menu">
+            <option value="25min">25min</option>
+            <option value="50min">50min</option>
+            <option value="90min">90min</option>
+        </select>
+        <button class="btn btn-primary my-4 px-4" id="continue" onclick="selectTimer()">Continue</button>
+    </main>
+    <p class="lead d-none" id="timer-quote">Timer has started! Start working!</p>
+    <div class="d-none container text-center my-5" id="timer-25">
+        <p class="display-3" id="timer-25-val">25 : 00</p>
+    </div>
+    <div class="d-none container text-center my-5" id="timer-50">
+        <p class="display-3" id="timer-50-val">50 : 00</p>
+    </div>
+    <div class="d-none container text-center my-5" id="timer-90">
+        <p class="display-3" id="timer-90-val">90 : 00</p>
+    </div>
+    <p class="lead d-none" id="reward-message">Reward Unlocked!</p>
+    <div id="reward-block"></div>
+    <p class="lead d-none my-3" id="motivate">Continue working to unlock more fragments and unlock the story!</p>
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+        <img class="story-image my-4 p-4  d-none" id="story-image" src="images/story-image.jpeg" alt="Story Image"
+            aria-label="Story Image">
+        <div class="d-none text-center p-4 mb-2" id="story">
+            <p class="lead">Once upon a time ...</p>
+            <p class="story-paras">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo esse tenetur soluta
+                blanditiis quas ab labore magni tempora dolor eum mollitia veniam, pariatur officia deleniti, in non
+                quidem dolorem autem?</p>
+            <p class="story-paras">Vero alias deserunt cum quod quaerat odit veniam sit illum dolore atque eum natus
+                distinctio, tenetur illo eos eligendi neque consequatur aspernatur nihil, aliquam praesentium. Officia,
+                esse dicta! Quam, voluptatem!</p>
+            <p class="story-paras">Aliquam dicta ea dolores sunt architecto officiis aut quos cupiditate quis, officia
+                quibusdam ex. Minima ex, obcaecati, suscipit vero ab enim provident velit necessitatibus esse asperiores
+                nisi similique soluta molestiae?</p>
+        </div>
+    </div>
+    <div class="container d-none text-center" id="start" onclick="start()">
+        <button class="btn btn-secondary" aria-label="Start Timer Button">Start</button>
+    </div>
+    <div class="container controls">
+        <button class="d-none btn btn-secondary" aria-label="End Timer button" id="end" onclick="endTimer()">End
+            Timer</button>
+        <button class="d-none btn btn-secondary" aria-label="Restart Timer button" id="restart"
+            onclick="restartTimer()">Restart Timer</button>
+    </div>
+</body>
+
+</html>
