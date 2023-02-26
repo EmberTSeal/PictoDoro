@@ -139,7 +139,6 @@ function modeChange() {
         document.getElementById("home-dark").classList.remove("d-none")
         document.getElementById("headerContent").classList.remove("dark-head")
         document.getElementById("headerContent").classList.add("light-head")
-
     }
     else {
         document.getElementById("body").classList.add("dark")
