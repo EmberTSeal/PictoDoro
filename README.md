@@ -22,8 +22,22 @@ https://embertseal.github.io/PictoDoro/index.html
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+### Landing Page
+<img src="images/web-view-landing.png">
 
+### Timer Selection 
+<img src="images/timerselect.png">
+
+
+### Timer Running 
+<img src="images/running.png">
+
+
+### Focus Block Reward
+<img src="images/rewardfirst.png">
+
+### Complete Reward
+<img src="images/fullreward.png">
 
 ### Author
 - [Trisha Seal](https://github.com/EmberTSeal)
