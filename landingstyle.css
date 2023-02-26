@@ -2,19 +2,24 @@ main{
     gap: 20px;
 }
 
+header{
+    background: linear-gradient(to top right, rgb(255, 230, 117), #ffa136, rgb(255, 99, 151));
+}
+
 .card{
+    background-color: #fff383;
     border-radius: 10px;
 }
 
 .card-images{
     max-height:500px;
     max-width:500px;
-    border-radius: 20px;
+    border-radius: 10px;
     transition: 30ms ease-in-out;
 }
 
 .card:hover{
-    background-color: rgb(255, 244, 181);
+    background: linear-gradient(to top right, rgb(255, 230, 117), #ffa136, rgb(255, 99, 151));
     translate: 0px -10px;
 }
 
@@ -46,5 +51,6 @@ main{
 }
 
 .dark-card:hover{
-    background-color: #7209b7;
+   background: linear-gradient(to top right, #f09, #3023AE, #0ff);
+   border: #3023AE;
 }

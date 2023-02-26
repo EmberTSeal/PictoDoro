@@ -137,6 +137,9 @@ function modeChange() {
             document.getElementsByClassName("card")[i].classList.remove("dark-card")
         document.getElementById("home").classList.add("d-none")
         document.getElementById("home-dark").classList.remove("d-none")
+        document.getElementById("headerContent").classList.remove("dark-head")
+        document.getElementById("headerContent").classList.add("light-head")
+
     }
     else {
         document.getElementById("body").classList.add("dark")
@@ -148,6 +151,8 @@ function modeChange() {
             document.getElementsByClassName("card")[i].classList.add("dark-card")
         document.getElementById("home").classList.remove("d-none")
         document.getElementById("home-dark").classList.add("d-none")
+        document.getElementById("headerContent").classList.add("dark-head")
+        document.getElementById("headerContent").classList.remove("light-head")
     }
 }
 
